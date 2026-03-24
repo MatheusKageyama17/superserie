@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Super Série | Campo Grande, MS</title>
+  <meta name="description" content="Academia Super Série em Campo Grande, MS. Musculação, Funcional, Natação, Hidroginástica e Muay Thai. 4.8 estrelas no Wellhub · 248 avaliações · GymPass, TotalPass e Wellhub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════
+       NAV
+  ════════════════════════════════════ -->
+  <nav id="navbar" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo-link" aria-label="Super Série Academia">
+        <img src="logo-circle.jpg" alt="Academia Super Série" class="nav-circle-logo" />
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#modalidades">Modalidades</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#contato" class="btn-nav">Começar agora</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════
+       HERO — Full-screen looping video
+  ════════════════════════════════════ -->
+  <section id="hero">
+    <!-- Looping background video -->
+    <video id="heroBgVideo" autoplay muted loop playsinline aria-hidden="true">
+      <source src="supersire.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+
+      <!-- Headline -->
+      <h1 class="hero-title stagger-1">
+        Corpo em <em>Movimento</em>
+      </h1>
+      <p class="hero-sub stagger-3">Mente em Equilíbrio</p>
+
+      <!-- CTA buttons -->
+      <div class="hero-actions stagger-4">
+        <a href="#planos" class="btn-primary" data-magnetic>
+          Ver planos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#modalidades" class="btn-ghost">
+          Conhecer modalidades
+        </a>
+      </div>
+
+      <!-- Stat strip -->
+      <div class="hero-stats stagger-5" aria-label="Destaques">
+        <div class="hstat">
+          <span class="hstat-num" data-target="248">0</span><span class="hstat-suf">+</span>
+          <span class="hstat-label">Avaliações</span>
+        </div>
+        <div class="hstat-divider" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-target="4.8" data-dec="1">0</span>
+          <span class="hstat-label">Nota Wellhub</span>
+        </div>
+        <div class="hstat-divider" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-target="5">0</span>
+          <span class="hstat-label">Modalidades</span>
+        </div>
+        <div class="hstat-divider" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-target="100">0</span><span class="hstat-suf">%</span>
+          <span class="hstat-label">Recomendação</span>
+        </div>
+      </div>
+
+      <!-- Accept pills -->
+      <div class="hero-accept stagger-6" aria-label="Plataformas aceitas">
+        <span class="accept-pill">GymPass</span>
+        <span class="accept-pill">TotalPass</span>
+        <span class="accept-pill">Wellhub</span>
+      </div>
+    </div>
+
+    <!-- Scroll down hint -->
+    <a href="#sobre" class="hero-scroll-hint" aria-label="Rolar para baixo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════
+       SOBRE — Zig-zag asymmetric
+  ════════════════════════════════════ -->
+  <section id="sobre" class="section-gap">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-content fade-up">
+          <p class="eyebrow">Quem somos</p>
+          <h2 class="section-h2">Uma academia que<br/><em>transforma vidas</em></h2>
+          <p class="body-text">Na Super Série, acreditamos que o movimento é para todos — independente da idade ou objetivo. Com equipe acolhedora e motivacional, celebramos cada conquista, de alunos jovens até nossa incrível aluna de <strong>95 anos</strong>.</p>
+          <p class="body-text">Localizada no coração de Campo Grande, oferecemos estrutura completa, ambiente comunitário e profissionais apaixonados pelo que fazem.</p>
+          <div class="sobre-pills">
+            <span class="pill">GymPass</span>
+            <span class="pill">TotalPass</span>
+            <span class="pill">Wellhub</span>
+          </div>
+        </div>
+
+        <!-- Cube 3D -->
+        <div class="sobre-3d fade-up" aria-hidden="true">
+          <div class="cube-scene">
+            <div class="cube">
+              <div class="cube-face front">FORÇA</div>
+              <div class="cube-face back">SAÚDE</div>
+              <div class="cube-face left">FOCO</div>
+              <div class="cube-face right">VIDA</div>
+              <div class="cube-face top">MOVE</div>
+              <div class="cube-face bottom">SS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       MODALIDADES — Bento asymmetric
+  ════════════════════════════════════ -->
+  <section id="modalidades" class="section-gap section-alt">
+    <div class="container">
+      <div class="section-header-split fade-up">
+        <div>
+          <p class="eyebrow">O que oferecemos</p>
+          <h2 class="section-h2">Nossas <em>modalidades</em></h2>
+        </div>
+        <p class="section-desc">Cinco modalidades para você encontrar o movimento que transforma seu corpo e sua mente.</p>
+      </div>
+
+      <!-- 5-column uniform grid -->
+      <div class="modal-grid fade-up">
+        <article class="modal-card spotlight-card" tabindex="0">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6.5 6.5h11M6.5 17.5h11M3 8.5v7M21 8.5v7M5 8.5V6a1 1 0 0 1 1-1h1.5M19 8.5V6a1 1 0 0 0-1-1h-1.5M5 15.5V18a1 1 0 0 0 1 1h1.5M19 15.5V18a1 1 0 0 1-1 1h-1.5"/></svg>
+          </div>
+          <h3>Musculação</h3>
+          <p>Equipamentos modernos e treinos periodizados para resultados reais.</p>
+        </article>
+
+        <article class="modal-card spotlight-card" tabindex="0">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="5" r="2"/><path d="m10 9-2 6h8l-2-6"/><path d="m8 15-1.5 5M16 15l1.5 5M9.5 11H14"/></svg>
+          </div>
+          <h3>Funcional</h3>
+          <p>Alta intensidade com foco em agilidade, força e resistência total.</p>
+        </article>
+
+        <article class="modal-card spotlight-card" tabindex="0">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Natação</h3>
+          <p>Piscina completa e turmas para todos os níveis de habilidade.</p>
+        </article>
+
+        <article class="modal-card spotlight-card" tabindex="0">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8c0 4.4 4 8 9 8s9-3.6 9-8"/><path d="M3 16c0 4.4 4 0 9 0s9 4.4 9 0"/></svg>
+          </div>
+          <h3>Hidroginástica</h3>
+          <p>Baixo impacto, muito bem-estar. Ideal para todas as idades.</p>
+        </article>
+
+        <article class="modal-card spotlight-card" tabindex="0">
+          <div class="modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v5l2.5 2.5M7 14l-3.5 5M17 14l3.5 5M7 14h10"/></svg>
+          </div>
+          <h3>Muay Thai</h3>
+          <p>Disciplina, condicionamento intenso e autoconfiança fora do comum.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════
+       AVALIAÇÕES — Marquee
+  ════════════════════════════════════ -->
+  <section id="avaliacoes" class="section-gap section-alt">
+    <div class="container">
+      <div class="section-header-split fade-up">
+        <div>
+          <p class="eyebrow gold-tag">Depoimentos</p>
+          <h2 class="section-h2">O que nossos <em>alunos dizem</em></h2>
+        </div>
+        <div class="review-summary" aria-label="Resumo das avaliações">
+          <span class="rev-big">4.8</span>
+          <div>
+            <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+            <span>248 avaliações</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee — mask-fade on sides -->
+    <div class="marquee-wrap fade-up">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"Melhor academia de Campo Grande. Professores incríveis e ambiente acolhedor."</p>
+          <strong>Ana C., 3 anos de aluna</strong>
+        </div>
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"As aulas de Muay Thai são as melhores da cidade. Me sinto em família aqui."</p>
+          <strong>Rafael M., Muay Thai</strong>
+        </div>
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"A hidroginástica transformou minha qualidade de vida. Profissionais muito competentes!"</p>
+          <strong>Dona Lurdes, 72 anos · Hidroginástica</strong>
+        </div>
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"Treino aqui há 3 anos e só evolui. Musculação e funcional são excelentes."</p>
+          <strong>Lucas P., Musculação</strong>
+        </div>
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"Com GymPass ficou ainda melhor. Estrutura impecável e atendimento diferenciado."</p>
+          <strong>Mariana S., Natação</strong>
+        </div>
+        <div class="review-card spotlight-card">
+          <svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12" aria-hidden="true"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg>
+          <p>"Ambiente leve, professores motivadores. Me sinto em casa toda vez que entro."</p>
+          <strong>João V., Funcional</strong>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="review-card spotlight-card" aria-hidden="true"><svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg><p>"Melhor academia de Campo Grande. Professores incríveis e ambiente acolhedor."</p><strong>Ana C., 3 anos de aluna</strong></div>
+        <div class="review-card spotlight-card" aria-hidden="true"><svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg><p>"As aulas de Muay Thai são as melhores da cidade. Me sinto em família aqui."</p><strong>Rafael M., Muay Thai</strong></div>
+        <div class="review-card spotlight-card" aria-hidden="true"><svg viewBox="0 0 60 12" fill="#C9A227" width="60" height="12"><path d="M6 0l1.76 3.58L12 4.18l-3 2.92.7 4.12L6 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM18 0l1.76 3.58L24 4.18l-3 2.92.7 4.12L18 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM30 0l1.76 3.58L36 4.18l-3 2.92.7 4.12L30 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM42 0l1.76 3.58L48 4.18l-3 2.92.7 4.12L42 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6zM54 0l1.76 3.58L60 4.18l-3 2.92.7 4.12L54 9.13l-3.7 2.09.7-4.12-3-2.92 4.24-.6z"/></svg><p>"A hidroginástica transformou minha qualidade de vida."</p><strong>Dona Lurdes, 72 anos</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       HORÁRIOS — horizontal strip
+  ════════════════════════════════════ -->
+  <section id="horarios" class="section-gap">
+    <div class="container">
+      <div class="fade-up">
+        <p class="eyebrow center">Funcionamento</p>
+        <h2 class="section-h2 center">Nossos <em>horários</em></h2>
+      </div>
+      <div class="horarios-strip fade-up">
+        <div class="horario-item">
+          <div class="horario-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <p class="horario-day">SEG — SEX</p>
+          <p class="horario-time">05<sup>h</sup> — 23<sup>h</sup></p>
+        </div>
+        <div class="horario-divider" aria-hidden="true"></div>
+        <div class="horario-item">
+          <div class="horario-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <p class="horario-day">SÁBADO</p>
+          <p class="horario-time">07<sup>h</sup> — 16<sup>h</sup></p>
+        </div>
+        <div class="horario-divider" aria-hidden="true"></div>
+        <div class="horario-item">
+          <div class="horario-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg>
+          </div>
+          <p class="horario-day">DOMINGO</p>
+          <p class="horario-time">09<sup>h</sup> — 12<sup>h</sup></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       PLANOS — 2-col asymmetric
+  ════════════════════════════════════ -->
+  <section id="planos" class="section-gap section-alt">
+    <div class="container">
+      <div class="section-header-split fade-up">
+        <div>
+          <p class="eyebrow">Invista em você</p>
+          <h2 class="section-h2">Escolha seu <em>plano</em></h2>
+        </div>
+        <p class="section-desc">Também aceitamos <strong>GymPass</strong>, <strong>TotalPass</strong> e <strong>Wellhub</strong>.</p>
+      </div>
+
+      <!-- 2-col: sidebar + cards — taste-skill bans equal 3-col -->
+      <div class="planos-layout fade-up">
+        <aside class="planos-sidebar">
+          <h3>O que todos os planos incluem</h3>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Avaliação física completa
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Acesso ao app de treinos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Vestiários completos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Wi-Fi na academia
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Cancelamento sem multa
+            </li>
+          </ul>
+          <p class="sidebar-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Pagamento 100% seguro
+          </p>
+        </aside>
+
+        <div class="planos-cards">
+          <div class="plano-card spotlight-card">
+            <div class="plano-header">
+              <h3>Mensal</h3>
+              <div class="plano-price">R$<span>89</span><sub>/mês</sub></div>
+            </div>
+            <ul class="plano-extras">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Musculação e Funcional</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Horários livres</li>
+            </ul>
+            <a href="#contato" class="btn-outline">Contratar</a>
+          </div>
+
+          <div class="plano-card plano-featured spotlight-card">
+            <div class="featured-label">Mais escolhido</div>
+            <div class="plano-header">
+              <h3>Semestral</h3>
+              <div class="plano-price">R$<span>69</span><sub>/mês</sub></div>
+            </div>
+            <ul class="plano-extras">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Todas as modalidades</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Personal 1x/semana</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Desconto em suplementos</li>
+            </ul>
+            <a href="#contato" class="btn-primary magnetic" data-magnetic>
+              Contratar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="plano-card spotlight-card">
+            <div class="plano-header">
+              <h3>Anual</h3>
+              <div class="plano-price">R$<span>59</span><sub>/mês</sub></div>
+            </div>
+            <ul class="plano-extras">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Todas as modalidades</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Personal 2x/semana</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Prioridade no agendamento</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Desconto em suplementos</li>
+            </ul>
+            <a href="#contato" class="btn-outline">Contratar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       CONTATO
+  ════════════════════════════════════ -->
+  <section id="contato" class="section-gap">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info fade-up">
+          <p class="eyebrow">Fale conosco</p>
+          <h2 class="section-h2">Venha nos <em>visitar</em></h2>
+
+          <div class="cinfo-item">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua Brilhante, 1820 — Vila Carvalho<br/>Campo Grande, MS</p>
+            </div>
+          </div>
+
+          <div class="cinfo-item">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 8 8l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 23 17z"/></svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p><a href="https://wa.me/5567926491116" target="_blank" rel="noopener">+55 67 9264-9116</a></p>
+            </div>
+          </div>
+
+          <div class="cinfo-item">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/academiasuperserie_/" target="_blank" rel="noopener">@academiasuperserie_</a></p>
+            </div>
+          </div>
+
+          <div class="cinfo-item">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>Horários</strong>
+              <p>Seg–Sex 05h–23h · Sáb 07h–16h · Dom 09h–12h</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contato-form glass-card fade-up" id="contato-form" novalidate>
+          <h3>Solicite <em>informações</em></h3>
+
+          <div class="form-field">
+            <label for="f-name">Nome completo</label>
+            <input type="text" id="f-name" name="name" placeholder="Ex: Gabriela Ramos" required autocomplete="name" />
+            <span class="field-error" id="err-name" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="f-tel">WhatsApp</label>
+            <input type="tel" id="f-tel" name="tel" placeholder="(67) 9 9999-9999" required autocomplete="tel" />
+            <span class="field-error" id="err-tel" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="f-modal">Modalidade de interesse</label>
+            <select id="f-modal" name="modalidade" required>
+              <option value="" disabled selected>Selecione a modalidade</option>
+              <option value="Musculação">Musculação</option>
+              <option value="Funcional">Funcional</option>
+              <option value="Natação">Natação</option>
+              <option value="Hidroginástica">Hidroginástica</option>
+              <option value="Muay Thai">Muay Thai</option>
+              <option value="Quero conhecer tudo">Quero conhecer tudo!</option>
+            </select>
+            <span class="field-error" id="err-modal" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn-primary w-full magnetic" data-magnetic id="form-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+
+          <p class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Seus dados são protegidos e não serão compartilhados.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo-circle.jpg" alt="Academia Super Série" class="footer-circle-logo" />
+          <p>"Corpo em movimento, mente em equilíbrio"</p>
+        </div>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#sobre">Sobre</a>
+          <a href="#modalidades">Modalidades</a>
+          <a href="#planos">Planos</a>
+          <a href="https://www.instagram.com/academiasuperserie_/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://wa.me/5567926491116" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Academia Super Série — Rua Brilhante, 1820, Campo Grande, MS.</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
