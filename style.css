@@ -195,6 +195,23 @@ strong { font-weight: 700; color: var(--text-1); }
 .nav-logo-link:hover .nav-circle-logo {
   filter: brightness(1.5) contrast(1.4) saturate(1.6) drop-shadow(0 0 12px rgba(255,220,0,0.6));
 }
+.nav-logo-name {
+  margin-left: 10px;
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.nav-logo-name small {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--clr-text-muted, #aaa);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 
 .nav-links {
   list-style: none; display: flex; align-items: center; gap: 0.25rem;
